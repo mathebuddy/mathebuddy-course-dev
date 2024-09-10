@@ -1,0 +1,38 @@
+\documentclass[crop,tikz,rgb]{standalone}
+\usepackage{mathebuddy}
+
+\begin{document}
+% u1-gausscheZahlenebeneDef
+\begin{tikzpicture}
+	\begin{axis}[
+		% Absolute size configs
+		height=\mbgraphmaxsize,
+		width=\mbgraphmaxsize,
+		% Axis configs
+		xlabel=\mbfontsizeaxislabel Re,
+		ylabel=\mbfontsizeaxislabel Im,
+		axis lines=middle,
+		xmin=-0.5,
+		xmax=2,
+		ymin=-0.5,
+		ymax=2,
+		% X-ticks
+		xtick={1},
+		xticklabels={$x$},
+		xlabel style={anchor=\mbxlabelanchor},
+		% Y-ticks
+		ytick={1.5},
+		yticklabels={$y$},
+		ylabel style={anchor=\mbylabelanchor},
+		]
+
+	% Graph
+	\draw[\complexgraphthickness, dashed] (0, 1.5) -- (1, 1.5);
+	\draw[\complexgraphthickness, dashed] (1, 0) -- (1, 1.5);
+	\draw[\complexgraphthickness, color1, -latex] (0, 0) -- (1, 1.5);
+	% Labels
+	\node[above right, color2] at (1, 1.5){$x+iy$};
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass[crop,tikz,rgb]{standalone}
+\usepackage{mathebuddy}
+
+\begin{document}
+% u1-gausscheZahlenebeneExa
+\begin{tikzpicture}
+	\begin{axis}[
+		% Absolute size configs
+		height=\mbgraphmaxsize,
+		width=(3.9/2.5)*\mbgraphmaxsize,
+		% Axis configs
+		grid=major,
+		xlabel=\mbfontsizeaxislabel Re,
+		ylabel=\mbfontsizeaxislabel Im,
+		axis lines=middle,
+		xmin=-3.8,
+		xmax=0.1,
+		ymin=0,
+		ymax=2.5,
+		% X-ticks
+		xtick={0, -1, -2, -3},
+		xlabel style={anchor=\mbxlabelanchor},
+		% Y-ticks
+		ytick={1, 2},
+		yticklabels={$1$, $2$},
+		yticklabel style={anchor=west, xshift=7},
+		ylabel style={anchor=\mbylabelanchor},
+		]
+
+
+	% Graph
+	\draw[\complexgraphthickness, dashed] (0, 2) -- (-3, 2);
+	\draw[\complexgraphthickness, dashed] (-3, 0) -- (-3, 2);
+	\draw[\complexgraphthickness, color1, -latex] (0, 0) -- (-3, 2);
+	% Labels
+	\node[above left, color2] at (-3, 2){$-3+2i$};
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

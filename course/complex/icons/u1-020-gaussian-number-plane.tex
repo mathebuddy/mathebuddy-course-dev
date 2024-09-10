@@ -1,0 +1,38 @@
+\documentclass[crop,tikz,rgb]{standalone}
+\usepackage{mathebuddy}
+
+\begin{document}
+\begin{tikzpicture}
+	\pgfmathsetlengthmacro{\padding}{0.25*\mbiconsquaresize} % Outer padding
+	\pgfmathsetlengthmacro{\innerWidth}{\mbiconsquaresize-2*\padding}
+	\pgfmathsetlengthmacro{\innerHeight}{\mbiconsquaresize-2*\padding}
+
+	\clip (-0.15*\innerWidth,-0.25*\innerHeight) rectangle (1.35*\innerWidth,1.25*\innerHeight); % Padding does not include the axis label, therefore x-left and -right clip are asymmetric (right label is beyond the axis)
+	\begin{axis}[
+		% Absolute size configs
+		height=\innerHeight,
+		width=\innerWidth, 
+		% Axis configs
+		clip=false,
+		xlabel=\mbfontsizeaxislabel \textbf{Re},
+		ylabel=\mbfontsizeaxislabel \textbf{Im},
+		axis lines=\mbaxisline,
+		axis line style={\mbicongraphthickness, iconAxisColor},
+		scale only axis, % -> Labels are not included in the height and width
+		xmin=-0.5, 
+		xmax=2, 
+		ymin=-0.5, 
+		ymax=2, 
+		% X-ticks
+		xlabel style={anchor=\mbxlabelanchor, \mbxlabelposition, iconTextColor},
+		xtick={-100}, 
+		xticklabels={}, 
+		% Y-ticks
+		ylabel style={anchor=\mbylabelanchor, \mbylabelposition, iconTextColor},
+		ytick={-100}, 
+		yticklabels={} 
+		]
+	\end{axis}
+\end{tikzpicture}
+\end{document}
+

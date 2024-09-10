@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "OPENED MBL FILE",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "compile.py",
+      "args": ["${file}"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "COMPLETE COURSE",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "compile.py",
+      "args": ["/course/course.mbl"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

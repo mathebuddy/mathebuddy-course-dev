@@ -1,0 +1,25 @@
+Help Pages
+###########
+
+The learning application mathe:buddy is an interactive and gamified app for higher mathematics in the first year of study. Each topic is introduced with concise, easy-to-understand texts and includes examples, illustrations, and references to practical applications. An automated learning management system provides randomized training exercises of varying taxonomy levels, depending on the user's progress. The learning phase is complemented by short games, such as quick quizzes. Achieving milestones is rewarded with awards and high scores.
+
+These help pages provide an overview of the core features.
+
+Homepage
+============
+
+The following options are available on the homepage:
+
+FIGURE Main Menu
+    WIDTH=100
+    PATH=img/menu.jpg
+
+- **Continue** resumes the last visited level.
+
+- **Interactive** starts the interactive mode. Here, you can ask questions about concepts and practice exercises that match your current learning level.
+
+- **Awards** displays the awards you have earned.
+
+- **Progress** provides an overview of your progress through the content.
+
+- **Help** displays this help page.

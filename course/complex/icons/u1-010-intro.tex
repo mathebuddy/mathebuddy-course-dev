@@ -1,0 +1,10 @@
+\documentclass[crop,tikz,rgb]{standalone}
+\usepackage{mathebuddy}
+
+\begin{document}
+% Definitions for the square shape %"minimum size=\mbiconsquaresize, inner sep=-10px" für gleiche Schrift Größe
+\begin{tikzpicture}[square/.style={draw=none,color=transparent,text=iconTextColor}]
+	% Icon Text
+	\node at (0, 0) [square]{\iconfontsize $\mathbf{x^2=-1}$\textbf{?}};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,44 @@
+Einmalige Installation
+======================
+
+
+Einzige Abhängigkeit ist Python.
+Ansonsten wird in diesem Repository wird alles mitgeliefert, was nötig ist!
+
+
+Nutzung
+=======
+
+Es kann entweder der ganze Kurs, oder ein Kapitel / Level / ... übersetzt und getestet werden:
+
+    In VS-Code links im Menü "Dreieck" (Run and Debug) auswählen.
+    Dann oben im Dropdownmenü eine der beiden folgenden Optionen auswählen:
+
+    - COMPILE CURRENT FILE:
+        
+        Es wird die gerade in VS-Code geöffnete Datei übersetzt.
+        Sind mehrere Dateien offen (Tipp: im Splitscreen zu arbeiten lohnt sich immer!),
+        so wird diejenige Datei als Quelle genommen, in der der Cursor aktiv ist.
+
+    - COMPILE COURSE: 
+        
+        Unabhängig von gerade geöffneten Dateien wird der gesamte Kurs (also HM1/course.mbl) übersetzt.
+
+    Der Übersetzungsvorgang wird jeweils per [F5] in Gang gesetzt.
+    Im Terminal sieht man ggf. Fehlermeldungen.
+
+
+Als Simulator dient die macOS Applikation mathebuddy.app im Verzeichnis tools/.
+Nach Start wird automatisch der zuletzt übersetzte Kursteil angezeigt.
+
+Bei Änderungen muss mathebuddy.app in der Regel NICHT neugestartet werden.
+Oben in der Leiste "reload" nutzen; dann wird der zuletzt kompilierte Kurs
+(oder Kursteil) angezeigt.
+
+Tipp: unter macOS kann man die offene Applikation im Dock per Drag & Drop nach "links" zwischen die anderen
+      Icons ziehen, sodass der Simulator beim nächsten Mal direkt aus dem Dock geöffnet werden kann.
+
+Beim Testen des Gesamtkurses (HM1/course.mbl) wird der Lernstand gespeichert. Die Dateien findet man hier
+    /Users/USER/Library/Containers/com.example.mathebuddy/Data/Documents
+(USER muss durch den eigene Usernamen ersetzt werden; das Verzeichnis "Library" ist in der Standardeinstellung
+von macOS im Finder verborgen. "Hidden files" können per CMD+SHIFT+DOT angezeigt werden)

@@ -1,0 +1,15 @@
+% This file describes meta data for chapter "basics"
+
+TITLE 
+    Complex Numbers
+
+OPTIONS
+    NO_BLOCK_TITLES=true
+
+AUTHOR 
+    TH Koeln
+
+UNIT Complex Number Basics / Calculations      ICON icons/unit-basics.svg
+
+    (1.5,0) u1-010-intro                                         ICON icons/u1-010-intro.svg
+    (1,1)   u1-020-gaussian-number-plane     !u1-010-intro       ICON icons/u1-020-gaussian-number-plane.svg

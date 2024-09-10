@@ -1,0 +1,41 @@
+Intro
+##########
+
+PART
+    ICON=help-circle-outline
+    % icon library: https://pictogrammers.com/library/mdi/
+
+EXERCISE @ex:intro1
+    DISABLE_RETRY=true
+    Does the equation $x^2=-9$ have a real solution?
+    ( ) Yes
+    (x) No
+
+PART
+    ICON=book-open-page-variant-outline
+
+DEFINITION @def:intro
+    Over the real numbers, you cannot solve equations like $x^2=-1$ because there are no square roots of negative numbers. Therefore, we extend the number system to the so-called **complex numbers** and introduce the **imaginary unit i**, which satisfies
+    EQUATION*
+        i^2=-1.
+    $i$ is not a real number but a complex number. Complex numbers are often denoted with **$z$** instead of $x$.
+
+EXAMPLE @exa:intro
+    To solve the equation $z^2=-9$, we use the property $i^2=-1$:
+    EQUATION*
+        z^2= -9= 9\cdot (-1)= 9 \cdot i^2
+    Now you can take the square root and obtain the complex numbers
+    EQUATION*
+        z= \pm 3i 
+
+PART
+    ICON=checkbox-marked-circle-outline
+
+EXERCISE @ex:intro
+    CODE
+        a = rand(4,9);
+        b = a^2;
+
+    Solve the equation $z^2=-b$.
+
+    $z= \pm$ #a $i$

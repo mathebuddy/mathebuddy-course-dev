@@ -1,0 +1,16 @@
+% This file describes meta data for the course
+
+TITLE
+    Higher Mathematics
+
+COURSEID
+    hm1
+
+AUTHOR 
+    TH Köln
+
+HELP
+    help
+
+CHAPTERS
+    (0,0) complex      ICON icons/complex.svg

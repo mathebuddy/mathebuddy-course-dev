@@ -1,0 +1,45 @@
+\documentclass[crop,tikz,rgb]{standalone}
+\usepackage{mathebuddy}
+
+\begin{document}
+% u1-KreisExa
+\begin{tikzpicture}
+	\begin{axis}[
+		% Absolute size configs
+		height=\mbgraphmaxsize,
+		width=\mbgraphmaxsize,
+		% Axis configs
+		grid=major,
+		xlabel=\mbfontsizeaxislabel Re,
+		ylabel=\mbfontsizeaxislabel Im,
+		axis lines=middle,
+		xmin=-3.5,
+		xmax=3.5,
+		ymin=-3.5,
+		ymax=3.5,
+		% X-ticks
+		xtick={-3, -2, -1, 0, 1, 2, 3},
+		xlabel style={anchor=\mbxlabelanchor},
+		xticklabel style={xshift=-5},
+		xticklabels={$-3$, $-2$, $-1$, 0, $1$, $2$, $3$},
+		% Y-ticks
+		ytick={-3, -2, -1, 0, 1, 2, 3},
+		yticklabels={$-3$, $-2$, $-1$, 0, $1$, $2$, $3$},
+		yticklabel style={yshift=-5},
+		ylabel style={anchor=\mbylabelanchor},
+		]
+
+		\coordinate (Z1) at (2, 1);
+		\coordinate (Z2) at (-3, -1);
+		\coordinate (Z3) at (1, 2);
+		\node[\complexpointthickness, draw, circle, fill, complexPointColor, inner sep=1] at (Z1){};
+		\node[\complexpointthickness, draw, circle, fill, complexPointColor, inner sep=1] at (Z2){};
+		\node[\complexpointthickness, draw, circle, fill, complexPointColor, inner sep=1] at (Z3){};
+		% Labels
+		\node[below right, complexPointColor] at (Z1){$z_1$};	
+		\node[below right, complexPointColor] at (Z2){$z_2$};	
+		\node[below right, complexPointColor] at (Z3){$z_3$};	
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

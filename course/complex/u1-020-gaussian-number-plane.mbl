@@ -1,0 +1,52 @@
+The Gaussian Number Plane
+##########
+
+PART
+    ICON=help-circle-outline
+
+EXERCISE @ex:gaussscheZahlenebene1
+    INSTANCES=1
+    CODE
+        z3 = 1+2*1i;
+    FIGURE
+        WIDTH=75
+        PATH=img/u1-gaussian-number-plane-ex1.svg
+    We represent the points $z_1=2+i$ and $z_2=-3-i$ as shown in the figure. How can $z_3$ be represented?
+
+    $z_3=$ #z3
+
+PART
+    ICON=book-open-page-variant-outline
+
+DEFINITION Gaussian Number Plane @def:gaussianNumberPlane
+    CHATKEYS
+        gaussian number plane, imaginary unit, imaginary axis
+    In $\RR^2$, we define **addition** and **multiplication** as follows:
+    - $(x_1,y_1)+(x_2,y_2)=(x_1+x_2,y_1+y_2)$
+    - $(x_1,y_1) \cdot (x_2,y_2)=(x_1x_2-y_1y_2,x_1y_2+x_2y_1)$.
+
+    The set $\RR^2$ with these two operations is called the set $\CC$ of **complex numbers**, or the **Gaussian Number Plane**. The elements of the $x$- or **real axis** can be identified with real numbers, where we write $x$ instead of $(x,0)$. The elements of the $y$- or **imaginary axis** are called purely imaginary. $(0,y)$ is also written as **i y**, where **i** represents the **imaginary unit**.
+
+    FIGURE
+        WIDTH=75
+        PATH=img/u1-gaussian-number-plane-def.svg
+
+EXAMPLE @def:gaussianNumberPlane
+    The point $(-3,2)$ can be represented as
+    EQUATION*
+        (-3,2)=(-3,0)+(0,2).
+    In the Gaussian Number Plane, $(-3,0)$ is identified with the real number $-3$, and $(0,2)$ is identified with the purely imaginary number $2i$, i.e., in the Gaussian Number Plane, we write $-3+2i$.
+    FIGURE
+        WIDTH=75
+        PATH=img/u1-gaussian-number-plane-exa.svg
+
+PART
+    ICON=checkbox-marked-circle-outline
+
+EXERCISE @ex:gaussianNumberPlane2
+    CODE
+        a/b=rand(2,8);
+        a=randZ(-1,1)*a;
+        b=randZ(-1,1)*b;
+        z=complex(a,b);
+    $(a,b)$ can be represented in the Gaussian Number Plane as #z.
